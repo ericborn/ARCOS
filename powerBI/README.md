@@ -1,24 +1,28 @@
-# ARCOS
+# Power BI
 
-## Introduction
-The Automated Reports and Consolidated Ordering System (ARCOS), is a data collection system used by manufacturers and distributors to report controlled substances transactions to the Drug Enforcement administration. In this project I will be exploring specifically opioid sales and distribution data published from this system as a result of an Ohio federal court ruling. The dataset allows the tracking of opioid pain pills from distributors to pharmacies and practitioners in the US from 2006 to 2012.
+## Top 10
+I first chose to focused in on the top 10 distributors, by total pills, by year. Looking at the visual, you can quickly see that the top two companies, Cardinal Health and McKesson, make up a large portion contributing over 400 and 250 million respectively. The top five companies listed are responsible for distributing over 1 billion pain pills to the state of Massachusetts between 2006 and 2012.
+![toppills](/powerBI/pbi_images/1top_pills.png)
 
-## Dataset Details
-Two versions of this data are available online. The original is over 150GB in size and contains transaction records relating to all controlled substances being transferred between distributors and pharmacies. The filtered dataset here created by the Washington Post, focuses on opioid medications and is around 75GB in total size, containing approximately 178 million rows. Due to the size of this dataset and the very slow query times I was experiencing using it, I created a third version which is reduced down to only include rows where the purchasing organizations are located within the state of Massachusetts, which reduced the dataset down to around 2.5 million rows.
+## Percent of Total
+Looking at the total pills percentage each distributor was responsible for as a bar chart really illustrates how Cardinal Health and McKesson were distributing a staggeringly large amount compared to most other companies.
+![pcttotal](/powerBI/pbi_images/2pct_total.png)
 
-Both files are offered as a single CSV files and contain 42 columns comprised of information relating to three categories. The first is information about the buyer and seller, the business names, address, city, state, zip and county for both the pill distributor and buying entity. The second category is details on the drug being transferred, the type of pill, quantity of packs or bottles, quantity of pills, strength, etc. The final category is related specifically to the transaction, the date it took place, order form number, transaction id and code and correction number.
+## Quantity over time from Cardinal Health
+Drilling down to Cardinal Health, we can see they have a steady increase in pill distributions year over year. In January 2006 they distributed 13.1 million pills, with close to a 4 million pill increased by December 2012 at 17 million total pills distributed.
+![qtyxtime](/powerBI/pbi_images/3qtyXtime.png)
 
-## Data Warehouse
-To determine the scope of the data warehouse, I started by defining business questions the warehouse will be used to answer. 
+## Average Pills by County
+To evaluate if there was an even distribution of pills across the entire state, I next looked at the average pill distributions by county. I found the averages year over year bounced up and down depending on the county. Places like Nantucket and Dukes went down over time, while Middlesex and Bristol went up.
+![avgcounty](/powerBI/pbi_images/4avg_pills.png)
 
-•	Which distributors supplied the most pills and did this change from month to month or year to year?
+## Total Pills by County
+Viewing the total distributions by county from 2006 to 2012 there were increases across the board in every county. Over 5 million more pills were distributed to Bristol county, close to 7 million in both Worcester and Middlesex and over 11 million in Essex county.
+### 2006
+![county2006](/powerBI/pbi_images/5pill_county2006.png)
+### 2012
+![county2012](/powerBI/pbi_images/5pill_county2012.png)
 
-•	What percent of the total is each distributor responsible for?
-
-•	Was there an even distribution in pills received throughout the state or concentrations in areas?
-
-•	Did the overall pill counts fluctuate between various months or years?
-
-•	Did the doses by type of drug increase over time?
-
-Looking at these questions from a time perspective, I decided the warehouse would only need to store data aggregated at the month level at a minimum. It will need to include information related to the distributor’s and buyer’s locations and data for the number of boxes, pills and grams of active medication.
+## Pill Distribution by Drug Type
+Comparing distributions between Hydrocodone and oxycodone, Hydrocodone had a large jump between 2006 to 2007, but actually peaked in 2009 and went back down in 2012 to similar levels as 2007. There was a total of 423 million pills with average of 60.4 million dispensed per year. Oxycodone on the other hand had a positive trend the entire time rising from 102 million in 2006 to 138 million in 2012. Over 858 million total pills with an average of 122.7 million pills dispensed per year.
+![pillxtype](/powerBI/pbi_images/6typeXtime.png)
