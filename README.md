@@ -22,3 +22,6 @@ To determine the scope of the data warehouse, I started by defining business que
 •	Did the doses by type of drug increase over time?
 
 Looking at these questions from a time perspective, I decided the warehouse would only need to store data aggregated at the month level at a minimum. It will need to include information related to the distributor’s and buyer’s locations and data for the number of boxes, pills and grams of active medication.
+
+## Analysis and Visualizations
+Once the data was loaded into the warehouse, I analyized it and created visualizations using both [Tableau](https://github.com/ericborn/ARCOS/tree/master/tableau) and [Power BI](https://github.com/ericborn/ARCOS/tree/master/powerBI). Please follow the links to see the analysis.
