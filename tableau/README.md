@@ -17,7 +17,7 @@ To evaluate if there was an even distribution of pills across the entire state, 
 ![avgcounty](/tableau/tableau_images/4avg_pills.png)
 
 ## Total Pills by County
-Similarly to the averges by county, I wanted to see totals year over year by county. There were increases across the board in every county between 2006 and 2012. Over 5 million more pills were distributed to Bristol county, close to 7 million in both Worcester and Middlsex and over 11 million in Essex county.
+Viewing the total distributions by county from 2006 to 2012 there were increases across the board in every county. Over 5 million more pills were distributed to Bristol county, close to 7 million in both Worcester and Middlesex and over 11 million in Essex county.
 ### 2006
 ![county2006](/tableau/tableau_images/5pill_county2006.png)
 ### 2012
