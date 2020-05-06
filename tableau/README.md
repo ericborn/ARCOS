@@ -19,6 +19,10 @@ To evaluate if there was an even distribution of pills across the entire state, 
 ## Total Pills by County
 Similarly to the averges by county, I wanted to see totals year over year by county. There were increases across the board in every county between 2006 and 2012. Over 5 million more pills were distributed to Bristol county, close to 7 million in both Worcester and Middlsex and over 11 million in Essex county.
 ### 2006
-![avgcounty](/tableau/tableau_images/5pill_county2006.png)
+![county2006](/tableau/tableau_images/5pill_county2006.png)
 ### 2012
-![avgcounty](/tableau/tableau_images/5pill_county2012.png)
+![county2012](/tableau/tableau_images/5pill_county2012.png)
+
+## Pill Distribution by Drug Type
+Comparing distributions between Hydrocodone and oxycodone, Hydrocodone had a large jump between 2006 to 2007, but actually peaked in 2009 and went back down in 2012 to similar levels as 2007. There was a total of 423 million pills with average of 60.4 million dispensed per year. Oxycodone on the other hand had a positive trend the entire time rising from 102 million in 2006 to 138 million in 2012. Over 858 million total pills with an average of 122.7 million pills dispensed per year.
+![pillxtype](/tableau/tableau_images/6typeXtime.png)
