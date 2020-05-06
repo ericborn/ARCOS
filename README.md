@@ -24,4 +24,4 @@ To determine the scope of the data warehouse, I started by defining business que
 Looking at these questions from a time perspective, I decided the warehouse would only need to store data aggregated at the month level at a minimum. It will need to include information related to the distributor’s and buyer’s locations and data for the number of boxes, pills and grams of active medication.
 
 ## Visualizations
-I created visualizations using the data I loaded into the warehouse with both [Tableau](https://github.com/ericborn/ARCOS/tableau) and [Power BI](https://github.com/ericborn/ARCOS/powerBI).
+I created visualizations using the data I loaded into the warehouse with both [Tableau](https://github.com/ericborn/ARCOS/tree/master/tableau) and [Power BI](https://github.com/ericborn/ARCOS/tree/master/powerBI).
