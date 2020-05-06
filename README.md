@@ -10,10 +10,15 @@ Both files are offered as a single CSV files and contain 42 columns comprised of
 
 ## Data Warehouse
 To determine the scope of the data warehouse, I started by defining business questions the warehouse will be used to answer. 
+
 •	Which distributors supplied the most pills and did this change from month to month or year to year?
+
 •	What percent of the total is each distributor responsible for?
+
 •	Was there an even distribution in pills received throughout the state or concentrations in areas?
+
 •	Did the overall pill counts fluctuate between various months or years?
+
 •	Did the doses by type of drug increase over time?
 
 Looking at these questions from a time perspective, I decided the warehouse would only need to store data aggregated at the month level at a minimum. It will need to include information related to the distributor’s and buyer’s locations and data for the number of boxes, pills and grams of active medication.
